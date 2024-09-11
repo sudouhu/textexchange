@@ -9,19 +9,14 @@
 <body>
     <h1>テキスト編集ツール</h1>
 
-    <div id="editor">
-        <textarea id="main-text" placeholder="テキストを入力してください..."></textarea>
-        <h3>プレースホルダー設定</h3>
-        <div id="placeholders">
-            <!-- プレースホルダー用の入力フィールドが動的に追加される -->
-        </div>
-        <button id="add-placeholder">プレースホルダーを追加</button>
-
-        <h3>リアルタイムプレビュー</h3>
-        <div id="preview"></div>
-
-        <button id="copy">コピー</button>
+    <!-- Tab navigation -->
+    <div id="tab-container">
+        <ul id="tab-list"></ul>
+        <button id="add-tab">タブを追加</button>
     </div>
+
+    <!-- Sets container, only the active set will be visible -->
+    <div id="sets-container"></div>
 
     <script src="script.js"></script>
 </body>
