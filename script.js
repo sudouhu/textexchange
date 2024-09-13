@@ -167,7 +167,7 @@ function updateAllPreviews() {
             const key = placeholder.querySelector('.placeholder-key').value;
             const value = placeholder.querySelector('.placeholder-value').value;
             if (key) {
-                const regex = new RegExp(`\\[${key}\\]`, 'g');
+                const regex = new RegExp(`\\「${key}\\」`, 'g');
                 previewText = previewText.replace(regex, value);
             }
         });
